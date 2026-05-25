@@ -16,7 +16,10 @@
     <header id="main-header">
         <a href="#" class="logo">
             <img src="logo.jpeg" alt="Jayukti Logo">
-            Jayukti Group of Companies<span>.</span>
+            <div class="logo-text">
+                <span class="logo-maintext">Jayukti</span>
+                <span class="logo-subtext">Group of Companies</span>
+            </div>
         </a>
         <nav>
             <ul>
@@ -24,7 +27,7 @@
                 <li><a href="#sectors">Sectors</a></li>
                 <li><a href="#innovation">Innovation</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" id="nav-leadership-btn">Leadership</a></li>
+                <li><a href="#leadership">Leadership</a></li>
             </ul>
         </nav>
     </header>
@@ -32,27 +35,23 @@
     <main>
         <section class="hero">
             <div class="hero-bg">
-                <img src="assets/hero_bg.png"
-                    alt="Jayukti Corporate Headquarters">
+                <img src="hero_bg.png" alt="Jayukti Corporate Headquarters">
             </div>
             <div class="hero-content">
-                <h1 id="hero-title">Bridging Global <br>Markets.</h1>
-                <p id="hero-para">Jayukti International Imports & Exports Private Limited is a premier global trading
-                    partner, dedicated to excellence in international commerce and supply chain solutions.</p>
-                <a href="#sectors" class="btn" id="hero-btn">Explore Our Services</a>
+                <h1 id="hero-title">Empowering Global <br>Growth</h1>
+                <p id="hero-para">The Jayukti Group of Companies is a diversified and dynamic conglomerate, dedicated to driving excellence and innovation across international trade, real estate, software solutions, and sustainable infrastructure.</p>
+                <a href="#sectors" class="btn" id="hero-btn">Explore Our Entities</a>
             </div>
         </section>
 
         <section id="about" class="reveal">
             <div class="section-title">
                 <span>About Us</span>
-                <h2>Jayukti International <br>Imports & Exports.</h2>
+                <h2>Jayukti Group of <br>Companies.</h2>
             </div>
             <div class="grid">
                 <div class="about-text">
-                    <p style="font-size: 1.2rem; color: var(--text-dim);">We are a registered Private Limited company
-                        (CIN: U46620AP2026PTC125682) specializing in bridging the gap between global manufacturers and
-                        local markets. Our focus is on transparency, efficiency, and reliability in every transaction.
+                    <p style="font-size: 1.2rem; color: var(--text-dim);">We are a rapidly expanding corporate group specializing in bridging the gap between global innovations and local markets. Across all our diverse entities, our primary focus remains on transparency, efficiency, and steadfast reliability in every venture we undertake.
                     </p>
                 </div>
                 <div class="stats-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
@@ -78,10 +77,15 @@
             </div>
             <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
                 <div class="card">
-                    <i class="fas fa-microchip"></i>
-                    <h3>Jayukti Research Hub</h3>
-                    <p>Driving technological breakthroughs through advanced R&D in AI, sustainable tech, and digital
-                        infrastructure.</p>
+                    <i class="fas fa-ship"></i>
+                    <h3>Jayukti Imports & Exports</h3>
+                    <p>Our flagship international trading arm, bridging global manufacturers with emerging markets.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Jayukti Infra Projects</h3>
+                    <p>Providing strategic business advice, trade compliance expertise, and global market entry
+                        solutions.</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-building"></i>
@@ -90,9 +94,15 @@
                     </p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-ship"></i>
-                    <h3>Jayukti Imports & Exports</h3>
-                    <p>Our flagship international trading arm, bridging global manufacturers with emerging markets.</p>
+                    <i class="fas fa-microchip"></i>
+                    <h3>Jayukti Research Hub</h3>
+                    <p>Driving technological breakthroughs through advanced R&D in AI, sustainable tech, and digital
+                        infrastructure.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Jayukti Software Solutions</h3>
+                    <p>Delivering innovative software engineering, digital transformation, and scalable IT infrastructure services.</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-hand-holding-heart"></i>
@@ -100,19 +110,12 @@
                     <p>Empowering communities through strategic philanthropy, education, and sustainable social
                         initiatives.</p>
                 </div>
-                <div class="card">
-                    <i class="fas fa-briefcase"></i>
-                    <h3>Jayukti Constructions</h3>
-                    <p>Providing strategic business advice, trade compliance expertise, and global market entry
-                        solutions.</p>
-                </div>
             </div>
         </section>
 
         <section id="innovation" class="innovation reveal">
             <div class="innovation-img">
-                <img src="assets/innovation_bg.png"
-                    alt="Global Connectivity">
+                <img src="innovation_bg.png" alt="Global Connectivity">
             </div>
             <div class="innovation-content" style="padding: 5%;">
                 <div class="section-title">
@@ -125,6 +128,67 @@
                 <a href="#contact" class="btn">Partner With Us</a>
             </div>
         </section>
+
+        <!-- Leadership Section on Main Page -->
+        <section id="leadership" class="reveal" style="padding: 6rem 10%; background: var(--secondary);">
+            <div class="section-title" style="text-align: center; margin-bottom: 3rem;">
+                <span>Our Leadership</span>
+                <h2>Driving the Vision</h2>
+            </div>
+            <div class="profiles-grid">
+                <div class="profile-card">
+                    <img src="Board of director 1.png" alt="Dr. M Chandra Sekhar" class="profile-img">
+                    <h3>Dr. M Chandra Sekhar</h3>
+                    <p style="color: var(--accent); margin-bottom: 0.5rem; font-size: 0.9rem;">Founder &amp; Chairman</p>
+                    <p style="margin-bottom: 1rem;"><a href="mailto:chairman@jayukti.com"
+                            style="color: var(--text-main); text-decoration: none; font-size: 0.9rem; transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--accent)'"
+                            onmouseout="this.style.color='var(--text-main)'"><i class="fas fa-envelope"></i>
+                            chairman@jayukti.com</a></p>
+                    <p>Providing strategic oversight and contributing to the sustainable growth and governance of the organization.</p>
+                </div>
+                <div class="profile-card">
+                    <img src="MD.png" alt="Dr. M V N Jaya Sree" class="profile-img">
+                    <h3>Dr. M V N Jaya Sree</h3>
+                    <p style="color: var(--accent); margin-bottom: 0.5rem; font-size: 0.9rem;">Managing Director</p>
+                    <p style="margin-bottom: 1rem;"><a href="mailto:md@jayukti.com"
+                            style="color: var(--text-main); text-decoration: none; font-size: 0.9rem; transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--accent)'"
+                            onmouseout="this.style.color='var(--text-main)'"><i class="fas fa-envelope"></i>
+                            md@jayukti.com</a></p>
+                    <p>Guiding the strategic vision and global operations of Jayukti Group with over two decades of industry expertise.</p>
+                </div>
+                <div class="profile-card">
+                    <img src="Technical Head.jpg" alt="Satish Kumar Mirtipati" class="profile-img">
+                    <h3>Satish Kumar Mirtipati</h3>
+                    <p style="color: var(--accent); margin-bottom: 0.5rem; font-size: 0.9rem;">Chief Executive Officer (CEO) &amp; Chief Technical Officer (CTO)</p>
+                    <p style="margin-bottom: 1rem;"><a href="mailto:ceo@jayukti.com"
+                            style="color: var(--text-main); text-decoration: none; font-size: 0.9rem; transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--accent)'"
+                            onmouseout="this.style.color='var(--text-main)'"><i class="fas fa-envelope"></i>
+                            ceo@jayukti.com</a></p>
+                    <p>Spearheading technological innovations, digital transformation, and infrastructural developments for the ecosystem.</p>
+                </div>
+                <div class="profile-card">
+                    <img src="Director.png" alt="Gorripati Ashok" class="profile-img">
+                    <h3>Gorripati Ashok</h3>
+                    <p style="color: var(--accent); margin-bottom: 1rem; font-size: 0.9rem;">Director</p>
+                    <p>Overseeing corporate governance, financial planning, and driving sustainable growth across all business verticals.</p>
+                </div>
+                <div class="profile-card">
+                    <img src="Image02.png" alt="Dr. D Mastanamma" class="profile-img">
+                    <h3>Dr. D Mastanamma</h3>
+                    <p style="color: var(--accent); margin-bottom: 1rem; font-size: 0.9rem;">Director</p>
+                    <p>Offering valuable insights and guidance to ensure operational excellence and strategic alignment.</p>
+                </div>
+                <div class="profile-card">
+                    <img src="manager.png" alt="M Siri Varshini" class="profile-img">
+                    <h3>M Siri Varshini</h3>
+                    <p style="color: var(--accent); margin-bottom: 1rem; font-size: 0.9rem;">Operational Manager</p>
+                    <p>Ensuring operational efficiency and facilitating seamless coordination across the organization's various departments.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer id="contact">
@@ -132,7 +196,10 @@
             <div class="footer-col">
                 <a href="#" class="logo">
                     <img src="logo.jpeg" alt="Jayukti Logo">
-                    Jayukti Group of Companies<span>.</span>
+                    <div class="logo-text">
+                        <span class="logo-maintext">Jayukti</span>
+                        <span class="logo-subtext">Group of Companies</span>
+                    </div>
                 </a>
                 <p style="color: var(--text-dim); margin-top: 1.5rem; max-width: 300px;">Jayukti International Imports &
                     Exports Private Limited.<br>CIN: U46620AP2026PTC125682</p>
@@ -140,11 +207,12 @@
             <div class="footer-col">
                 <h4>Group Entities</h4>
                 <ul style="font-size: 0.9rem;">
-                    <li><a href="#sectors">Jayukti Research Hub</a></li>
-                    <li><a href="#sectors">Jayukti Estates</a></li>
-                    <li><a href="#sectors">Jayukti Imports & Exports</a></li>
-                    <li><a href="#sectors">Jayukti Trust</a></li>
-                    <li><a href="#sectors">Jayukti Constructions</a></li>
+                    <li><a href="#sectors" style="white-space: nowrap;">Jayukti Imports &amp; Exports</a></li>
+                    <li><a href="#sectors" style="white-space: nowrap;">Jayukti Infra Projects</a></li>
+                    <li><a href="#sectors" style="white-space: nowrap;">Jayukti Estates</a></li>
+                    <li><a href="#sectors" style="white-space: nowrap;">Jayukti Research Hub</a></li>
+                    <li><a href="#sectors" style="white-space: nowrap;">Jayukti Software Solutions</a></li>
+                    <li><a href="#sectors" style="white-space: nowrap;">Jayukti Trust</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -159,12 +227,10 @@
             <div class="footer-col">
                 <h4>Contact Us</h4>
                 <ul>
-                    <li><a href="mailto:info@jayukti.com"><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@jayukti.com</a></li>
-                    <li><a href="#"><i class="fas fa-phone" style="margin-right: 10px;"></i> MD: +91 8328 101 303</a>
-                    </li>
-                    <li><a href="#"><i class="fas fa-phone" style="margin-right: 10px;"></i> Dir: +91 96188 05929</a>
-                    </li>
-                    <li><a href="#"><i class="fas fa-globe" style="margin-right: 10px;"></i> www.jayukti.com</a></li>
+                    <li><a href="mailto:info@jayukti.com"><i class="fas fa-envelope" style="margin-right: 10px;"></i>info@jayukti.com</a></li>
+                    <li><a href="#" style="white-space: nowrap;"><i class="fas fa-phone" style="margin-right: 10px;"></i>MD: +91 8328 101 303</a></li>
+                    <li><a href="#" style="white-space: nowrap;"><i class="fas fa-phone" style="margin-right: 10px;"></i>Dir: +91 96188 05929</a></li>
+                    <li><a href="#"><i class="fas fa-globe" style="margin-right: 10px;"></i>www.jayukti.com</a></li>
                 </ul>
             </div>
         </div>
@@ -189,40 +255,60 @@
                 <div class="profile-card">
                     <img src="Board of director 1.png" alt="Dr. M Chandra Sekhar" class="profile-img">
                     <h3>Dr. M Chandra Sekhar</h3>
-                    <p style="color: var(--accent); margin-bottom: 1rem; font-size: 0.9rem;">Founder &amp; Chairman</p>
-                    <p>Providing strategic oversight and contributing to the sustainable growth and governance of the organization.</p>
+                    <p style="color: var(--accent); margin-bottom: 0.5rem; font-size: 0.9rem;">Founder &amp; Chairman</p>
+                    <p style="margin-bottom: 1rem;"><a href="mailto:chairman@jayukti.com"
+                            style="color: var(--text-main); text-decoration: none; font-size: 0.9rem; transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--accent)'"
+                            onmouseout="this.style.color='var(--text-main)'"><i class="fas fa-envelope"></i>
+                            chairman@jayukti.com</a></p>
+                    <p>Providing strategic oversight and contributing to the sustainable growth and governance of the
+                        organization.</p>
                 </div>
                 <div class="profile-card">
-                    <img src="MD.png" alt="Dr. M V N JayaShree" class="profile-img">
-                    <h3>Dr. M V N JayaShree</h3>
+                    <img src="MD.png" alt="Dr. M V N Jaya Sree" class="profile-img">
+                    <h3>Dr. M V N Jaya Sree</h3>
                     <p style="color: var(--accent); margin-bottom: 0.5rem; font-size: 0.9rem;">Managing Director</p>
-                    <p style="margin-bottom: 1rem;"><a href="mailto:md@jayukti.com" style="color: var(--text-main); text-decoration: none; font-size: 0.9rem; transition: color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-main)'"><i class="fas fa-envelope"></i> md@jayukti.com</a></p>
-                    <p>Guiding the strategic vision and global operations of Jayukti Group with over two decades of industry expertise.</p>
+                    <p style="margin-bottom: 1rem;"><a href="mailto:md@jayukti.com"
+                            style="color: var(--text-main); text-decoration: none; font-size: 0.9rem; transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--accent)'"
+                            onmouseout="this.style.color='var(--text-main)'"><i class="fas fa-envelope"></i>
+                            md@jayukti.com</a></p>
+                    <p>Guiding the strategic vision and global operations of Jayukti Group with over two decades of
+                        industry expertise.</p>
                 </div>
                 <div class="profile-card">
                     <img src="Technical Head.jpg" alt="Satish Kumar Mirtipati" class="profile-img">
                     <h3>Satish Kumar Mirtipati</h3>
-                    <p style="color: var(--accent); margin-bottom: 0.5rem; font-size: 0.9rem;">Chief Executive Officer (CEO) & Chief Technical Officer (CTO)</p>
-                    <p style="margin-bottom: 1rem;"><a href="mailto:ceo@jayukti.com" style="color: var(--text-main); text-decoration: none; font-size: 0.9rem; transition: color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-main)'"><i class="fas fa-envelope"></i> ceo@jayukti.com</a></p>
-                    <p>Spearheading technological innovations, digital transformation, and infrastructural developments for the ecosystem.</p>
+                    <p style="color: var(--accent); margin-bottom: 0.5rem; font-size: 0.9rem;">Chief Executive Officer
+                        (CEO) & Chief Technical Officer (CTO)</p>
+                    <p style="margin-bottom: 1rem;"><a href="mailto:ceo@jayukti.com"
+                            style="color: var(--text-main); text-decoration: none; font-size: 0.9rem; transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--accent)'"
+                            onmouseout="this.style.color='var(--text-main)'"><i class="fas fa-envelope"></i>
+                            ceo@jayukti.com</a></p>
+                    <p>Spearheading technological innovations, digital transformation, and infrastructural developments
+                        for the ecosystem.</p>
                 </div>
                 <div class="profile-card">
                     <img src="Director.png" alt="Gorripati Ashok" class="profile-img">
                     <h3>Gorripati Ashok</h3>
                     <p style="color: var(--accent); margin-bottom: 1rem; font-size: 0.9rem;">Director</p>
-                    <p>Overseeing corporate governance, financial planning, and driving sustainable growth across all business verticals.</p>
+                    <p>Overseeing corporate governance, financial planning, and driving sustainable growth across all
+                        business verticals.</p>
                 </div>
                 <div class="profile-card">
                     <img src="Image02.png" alt="Dr. D Mastanamma" class="profile-img">
                     <h3>Dr. D Mastanamma</h3>
                     <p style="color: var(--accent); margin-bottom: 1rem; font-size: 0.9rem;">Director</p>
-                    <p>Offering valuable insights and guidance to ensure operational excellence and strategic alignment.</p>
+                    <p>Offering valuable insights and guidance to ensure operational excellence and strategic alignment.
+                    </p>
                 </div>
                 <div class="profile-card">
                     <img src="manager.png" alt="M Siri Varshini" class="profile-img">
                     <h3>M Siri Varshini</h3>
                     <p style="color: var(--accent); margin-bottom: 1rem; font-size: 0.9rem;">Manager</p>
-                    <p>Ensuring operational efficiency and facilitating seamless coordination across the organization's various departments.</p>
+                    <p>Ensuring operational efficiency and facilitating seamless coordination across the organization's
+                        various departments.</p>
                 </div>
             </div>
         </div>
