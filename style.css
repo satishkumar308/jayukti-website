@@ -467,12 +467,21 @@ footer {
         justify-content: center;
     }
     .logo {
-        font-size: 1.6rem;
-        white-space: normal;
-        text-align: left;
+        font-size: 2rem;
+        white-space: nowrap;
+        text-align: center;
+        flex-direction: column;
+        gap: 8px;
     }
     .logo img {
-        height: 40px;
+        height: 80px;
+        width: 80px;
+    }
+    .logo-subtext {
+        font-size: 1.2rem;
+    }
+    .hero {
+        padding: 220px 5% 0;
     }
     .footer-grid {
         grid-template-columns: 1fr;
