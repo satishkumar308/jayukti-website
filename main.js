@@ -68,25 +68,62 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('leadership-modal');
     const navBtn = document.getElementById('nav-leadership-btn');
     const aboutBtn = document.getElementById('about-leadership-btn');
-    const closeBtn = document.querySelector('.close-btn');
 
     function openModal(e) {
         if(e) e.preventDefault();
         modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
     }
 
-    function closeModal() {
-        modal.classList.remove('show');
+    function closeAllModals() {
+        document.querySelectorAll('.modal').forEach(m => m.classList.remove('show'));
+        document.body.style.overflow = '';
     }
 
     if (navBtn) navBtn.addEventListener('click', openModal);
     if (aboutBtn) aboutBtn.addEventListener('click', openModal);
-    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+    // Service Modals Logic
+    document.querySelectorAll('.view-services-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('data-target');
+            const targetModal = document.getElementById(targetId);
+            if (targetModal) {
+                closeAllModals();
+                targetModal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+
+                // Apply staggered animation to list items
+                const listItems = targetModal.querySelectorAll('.services-list li');
+                listItems.forEach((li, index) => {
+                    li.classList.remove('animate-in');
+                    li.style.animationDelay = '0s';
+                    
+                    // Force reflow
+                    void li.offsetWidth;
+                    
+                    li.style.animationDelay = `${index * 0.1}s`;
+                    li.classList.add('animate-in');
+                });
+            }
+        });
+    });
+
+    // Close buttons for all modals
+    document.querySelectorAll('.close-btn').forEach(btn => {
+        btn.addEventListener('click', closeAllModals);
+    });
 
     // Close modal on outside click
     window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModal();
+        if (e.target.classList.contains('modal')) {
+            closeAllModals();
         }
+    });
+
+    // Close on Escape key
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeAllModals();
     });
 });
