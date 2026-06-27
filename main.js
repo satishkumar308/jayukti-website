@@ -4,6 +4,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroPara = document.getElementById('hero-para');
     const heroBtn = document.getElementById('hero-btn');
 
+    const navbar = document.getElementById('navbar');
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+
+    if (mobileMenuBtn && navbar) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        const navLinks = navbar.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('active');
+            });
+        });
+    }
+
     // Hero Animations on Load
     setTimeout(() => {
         heroTitle.style.opacity = '1';
@@ -51,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
             if(targetId === '#') return; // Skip modal triggers
+            if(!targetId.startsWith('#')) return; // Allow normal navigation for external links like leadership.html
             
             e.preventDefault();
             const targetSection = document.querySelector(targetId);
