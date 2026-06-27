@@ -145,6 +145,18 @@ header.scrolled .logo-subtext {
     font-size: 1.3rem;
 }
 
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.8rem;
+    color: var(--accent);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.mobile-menu-btn:hover {
+    color: #ffffff;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -860,34 +872,57 @@ footer {
 
 @media (max-width: 768px) {
     header#main-header {
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1rem 5%;
+        padding: 0.8rem 5%;
+        background: rgba(10, 10, 11, 0.95);
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    nav#navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 10, 11, 0.98);
+        border-bottom: 1px solid var(--glass-border);
+        padding: 2rem 5%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.4s ease-in-out;
+    }
+
+    nav#navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     nav ul {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
     }
 
     .logo {
-        font-size: 2rem;
-        white-space: nowrap;
-        text-align: center;
-        flex-direction: column;
         gap: 8px;
     }
 
     .logo img {
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .logo-maintext {
+        font-size: 2rem;
     }
 
     .logo-subtext {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
-
     .hero {
         padding: 220px 5% 0;
     }
